@@ -9,10 +9,11 @@ class Main{
          int a[] = {1,2,3,4,5};
          int n = a.length;
          int k = 2;
+          k=k % n;
          int b[] = new int[n];
 
          for(int i=0;i<n;i++){
-             b[(i+k+10*n)%n] = a[i];
+             b[(i+k)%n] = a[i];
          }
      
         for(int i = 0; i<n; i++){
